@@ -2,6 +2,8 @@ package com.example.entsfrank.listview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,5 +13,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         String[]  skills = {"HTML","CSS","android","python","Django","Java","JavaScript","UX/UI","C++","Application Security SPecialist"};
+
+        ListAdapter theAdapter
+        theAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,
+                skills );
+
+
     }
 }
