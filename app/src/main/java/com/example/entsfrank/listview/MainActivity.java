@@ -25,15 +25,14 @@ public class MainActivity extends AppCompatActivity {
 
         theListView.setAdapter(theAdapter);
 
-        theListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                AdapterView adapterView = null;
-                String skillspicked= "you selected " + String.valueOf(adapterView.getItemAtPosition(position));
-                Toast.makeText(MainActivity. this , skillspicked, Toast.LENGTH_SHORT).show();
-
-            }
-        });
+//        theListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                AdapterView adapterView = null;
+//                String skillspicked= "you selected " + String.valueOf(adapterView.getItemAtPosition(position));
+//                Toast.makeText(MainActivity. this , skillspicked, Toast.LENGTH_SHORT).show();
+//            }
+//        });
         }
     }
 
